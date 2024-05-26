@@ -31,7 +31,7 @@
 }
   
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
+    background-color: goldenrod;
 }
   
 .dropdown-content { /* Dropdown content (hidden by default) */
@@ -65,3 +65,5 @@
     justify-content: space-between; /* Aligns content with space in between */
     align-items: center; /* Aligns content vertically */
 }
+
+body {font-family: 'Trebuchet MS';}
