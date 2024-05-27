@@ -58,7 +58,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: goldenrod;
+    background-color: #ff6f61;
 }
 
 .dropdown-content {
@@ -147,4 +147,10 @@ body {
 
 .resume-content h1, .resume-content h2, .resume-content h3, .resume-content p, .resume-content ul {
     text-align: left;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between; /* Aligns content with space in between */
+    align-items: center; /* Aligns content vertically */
 }
