@@ -17,37 +17,54 @@
         <a href="index.html">Home</a>
         <a href="#">Projects</a>
         <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Resumes
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a href="resumes/resumeM.html">Maddie's Resume</a>
-                <a href="resumes/resumeK.html">Kendyl's Resume</a>
-            </div>
+            <a href="resumes/resumeM.html">Madelin's Resume</a>
+            <a href="resumes/resumeK.html">Kendyl's Resume</a>
         </div>
     </div>
 
     <div class="content">
         <h2>Projects</h2>
-        <p> Here is the description of our project. Wow, isn't this so cool! ヽ(・∀・)ﾉ </p>
+        <p> Below are the details on previous projects that we have conducted </p>
     </div>
-
-    <script>
-        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
-                }
-            }
-        }
-    </script>
+    <div class="resume-content">
+        <h2>Project 1 </h2>
+        <h3>Navigating the Digital Pandemic: The Rise and Transformation of Cybercrime in Canada During COVID-19</h3>
+    
+        <h4>Project Summary</h4>
+        <p>This project examines the evolution of cybercrime in Canada during the COVID-19 pandemic. It analyzes trends and patterns in cybercriminal activities using a data-driven approach. The study focuses on how the pandemic and the subsequent increase in digital dependency influenced the nature and frequency of cybercrimes.</p>
+        
+        <h4>Statistics Performed</h4>
+        <ul>
+            <li><strong>Data Collection:</strong> Used datasets from Statistics Canada on police-reported cybercrime and organized crime.</li>
+            <li><strong>Standard Deviation Analysis:</strong> Compared the spread of cybercrime and in-person crime values across different years.</li>
+            <li><strong>Percentage Difference:</strong> Analyzed the percentage difference in crime rates pre-pandemic, during the pandemic, and post-pandemic.</li>
+            <li><strong>Top-K Analysis:</strong> Identified the most frequent crime types during the pandemic years.</li>
+            <li><strong>Linear Regression:</strong> Examined trends in cybercrime and in-person crime over time.</li>
+        </ul>
+        
+        <h4>Key Findings</h4>
+        <ul>
+            <li>Cybercrime significantly increased during the pandemic, while in-person crime showed a decrease.</li>
+            <li>Fraud and extortion were the most prevalent types of cybercrime.</li>
+            <li>Medium-sized cities experienced proportionately higher rates of cybercrime compared to larger cities.</li>
+            <li>Quebec had some of the lowest rates of cybercrime, likely due to its strong focus on cybersecurity.</li>
+        </ul>
+        
+        <h4>Images and Charts</h4>
+        <p>Below are some key visualizations from the study:</p>
+        <div class="image-container">
+            <img src="images/average_crime.png" width = "500" height = "350" alt="Average Cyber and In-Person Crime Rates from 2018 to 2022">
+            <p>Figure 1: Average Cyber and In-Person Crime Rates from 2018 to 2022</p>
+        </div>
+        <div class="image-container">
+            <img src="images/overall_crimes.png" width = "500" height = "350" alt="Overall Total Cyber and In-Person Crime Violations from 2018 to 2022">
+            <p>Figure 2: Overall Total Cyber and In-Person Crime Violations from 2018 to 2022</p>
+        </div>
+        <div class="image-container">
+            <img src="images/regression.png" width = "500" height = "350" alt="Matching Cyber and In-Person Crime Types Overview with Linear Regression from 2018 to 2022">
+            <p>Figure 3: Matching Cyber and In-Person Crime Types Overview with Linear Regression from 2018 to 2022</p>
+        </div>
+    </div>
 
 </body>
 </html>
