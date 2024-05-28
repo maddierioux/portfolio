@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Kendyl Snow and Madelin Rioux's Portfolio</h1>
+        <p>A showcase of our work, skills, and achievements.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Resumes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="resumes/resumeM.html">Maddie's Resume</a>
+                <a href="resumes/resumeK.html">Kendyl's Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>About Us</h2>
+        <div class="profiles">
+            <div class="profile">
+                <img src="images/kendyl.png" alt="Kendyl Snow" class="profile-img">
+                <h3>Kendyl Snow</h3>
+                <p>Hello! I am Kendyl Snow. Welcome to our portfolio website where we showcase our projects and professional journey.</p>
+            </div>
+            <div class="profile">
+                <img src="images/madelin.png" alt="Madelin Rioux" class="profile-img">
+                <h3>Madelin Rioux</h3>
+                <p>Hi! I'm Madelin Rioux. Feel free to explore our projects and get to know us better through our resumes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
