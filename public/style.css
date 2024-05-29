@@ -154,3 +154,11 @@ body {
     justify-content: space-between; /* Aligns content with space in between */
     align-items: center; /* Aligns content vertically */
 }
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
